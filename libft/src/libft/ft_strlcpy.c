@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 12:39:56 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:37:00 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -46,16 +45,16 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 * La funcion copia una cadena desde el origen al destino
 * con un limite de tamano especificado y retorna la longitud
 * de la cadena origen
-* 
+*
 * Declaramos una variable src_len, que guaradara la longitud del
 * string origen (src)
 *
 * Si src o dst son nulos, retornamos 0
 *
-* Mientras que la posicion en esa iteracion de src no sea nulo y 
+* Mientras que la posicion en esa iteracion de src no sea nulo y
 * que el tamano que recibimos para copiar sea mayor a 1, asignamos
 * a la posicion actual de dst el mismo caracter que haya en esa posicion
-* en src en esa iteracion y pasamos a la siguiente posicion en ambos 
+* en src en esa iteracion y pasamos a la siguiente posicion en ambos
 * para continuar el bucle, restando 1 al size en cada iteracion
 *
 * Una vez terminado, queda un espacio, con lo que asignamos el nulo

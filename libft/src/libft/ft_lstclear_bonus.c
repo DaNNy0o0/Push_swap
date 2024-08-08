@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 14:50:14 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:35:44 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
@@ -62,7 +61,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 // //         tmp = tmp->next;
 // //     }
 
-// //     return 0;
+// //     return (0);
 // // }
 
 /*
@@ -92,7 +91,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 *		al siguiente elemento
 *		- Eliminamos el elemento actual al que apuntamos
 *		con tmp, gracias a la fn ft_lstdelone y le pasamos
-*		como argumentos tmp y la funcion del (fn que libera 
+*		como argumentos tmp y la funcion del (fn que libera
 *		la memoria asignada a ese elemento)
 
 * Al llegar al ultimo elemento, asignamos a *lst el 0.

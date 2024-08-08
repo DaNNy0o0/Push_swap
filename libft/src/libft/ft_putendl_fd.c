@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 14:13:54 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:36:24 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 void	ft_putendl_fd(char *s, int fd)
 {
@@ -33,9 +32,9 @@ void	ft_putendl_fd(char *s, int fd)
 * Descripcion: Escribe una cadena en el file descriptor
 
 * Comprobamos si el file descriptor es valido, verificando
-* Si es menor que 0 y si el puntero s no es NULL. 
+* Si es menor que 0 y si el puntero s no es NULL.
 
-* En la mayoría de los sistemas operativos tipo Unix, 
-* los descriptores de archivo negativos no son válidos 
+* En la mayoría de los sistemas operativos tipo Unix,
+* los descriptores de archivo negativos no son válidos
 * para operaciones de E/S estándar.
 */

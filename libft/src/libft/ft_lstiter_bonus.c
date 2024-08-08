@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 15:01:30 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:35:50 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

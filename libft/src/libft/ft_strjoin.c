@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 13:05:33 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:36:54 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 14:25:09 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:35:13 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 int	ft_isalpha(int c)
 {
@@ -30,8 +29,8 @@ int	ft_isalpha(int c)
 /*
 ! *************** FT_ISALPHA ***************
 
-* Descripcion: Comprueba si un caracter es una letra mayuscula 
-*						 o una letra minuscula.
+* Descripcion: Comprueba si un caracter es una letra mayuscula
+*							o una letra minuscula.
 
 * Retorna 1 si es true o 0 si es false (No lo es)
 

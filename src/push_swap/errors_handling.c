@@ -68,6 +68,6 @@ void	free_errors(t_stack_node **a, char **av)
 {
 	free_stack(a);
 	free_split(av);
-	write(2,"Error\n",6);
+	write(2, "Error\n", 6);
 	exit(1);
 }

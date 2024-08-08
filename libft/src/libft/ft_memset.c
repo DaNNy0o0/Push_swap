@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 15:12:13 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:36:18 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -42,10 +41,10 @@ void	*ft_memset(void *s, int c, size_t n)
 * Declaramos un puntero, result, que apunta al mismo lugar
 * en memoria que s.
 *
-* Iteramos mientras n sea mayor que 0, disminuyendo 1 a n 
-* en cada iteracion,y vamos 
-* asignando el caracter c al elemento al que apunta s en 
-* ese mismo momento. Pasamos a la siguiente posicion de s y 
+* Iteramos mientras n sea mayor que 0, disminuyendo 1 a n
+* en cada iteracion,y vamos
+* asignando el caracter c al elemento al que apunta s en
+* ese mismo momento. Pasamos a la siguiente posicion de s y
 * volvemos a iterar.
 *
 * Retornamos el puntero result al acabar.

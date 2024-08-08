@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:25:27 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:37:28 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 int	ft_toupper(int c)
 {
@@ -22,7 +21,7 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-// int	main()
+// int	main(void)
 // {
 // 	int	c_lower = 'a';
 // 	int	c_updated = ft_toupper(c_lower);

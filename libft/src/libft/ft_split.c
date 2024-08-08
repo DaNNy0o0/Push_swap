@@ -12,7 +12,6 @@
 
 #include "../../includes/libft.h"
 
-
 static void	ft_free(char **result)
 {
 	int	i;

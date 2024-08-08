@@ -32,7 +32,7 @@ static void	ft_check(char **argv)
 		}
 		if (!argv[j][y])
 		{
-			write(2,"Error\n",6);
+			write(2, "Error\n", 6);
 			exit(1);
 		}
 		j++;

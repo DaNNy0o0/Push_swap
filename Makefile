@@ -17,8 +17,8 @@ INC					= includes/
 SRC_DIR				= src/
 OBJ_DIR				= obj/
 
-CC					= cc
-CFLAGS				= -Wall -Werror -Wextra -I
+CC					= gcc
+CFLAGS				= -Wall -Werror -Wextra -I$(INC) -fsanitize=address -g
 RM					= rm -f
 
 OPERATIONS_DIR		=	$(SRC_DIR)operations/push.c \
@@ -39,6 +39,7 @@ PUSH_SWAP_DIR		=	$(SRC_DIR)push_swap/errors_handling.c \
 
 SRCS 				= $(OPERATIONS_DIR) $(PUSH_SWAP_DIR)
 
+
 OBJ 				= $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRCS))
 
 start:				
@@ -50,11 +51,12 @@ $(LIBFT):
 all: 				$(NAME)
 
 $(NAME): 			$(OBJ) $(LIBFT)
-					@$(CC) $(CFLAGS) $(INC) $(OBJ) $(LIBFT) -o $(NAME)
+					@$(CC) $(CFLAGS) $(OBJ) $(LIBFT) -o $(NAME)
 
-$(OBJ_DIR)%.o:		$(SRC_DIR)%.c 
+# Regla para generar los archivos objeto
+$(OBJ_DIR)%.o:		$(SRC_DIR)%.c
 					@mkdir -p $(@D)
-					@$(CC) $(CFLAGS) $(INC) -c $< -o $@
+					@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 					@$(RM) -r $(OBJ_DIR)
@@ -62,8 +64,8 @@ clean:
 
 fclean: 			clean
 					@$(RM) $(NAME)
-					@$(RM) $(LIBFT)
+					@make fclean -C ./libft
 
 re: 				fclean all
 
-.PHONY: 			start all clean fclean re
+.PHONY: 			all clean fclean re

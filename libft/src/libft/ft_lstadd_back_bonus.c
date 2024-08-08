@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 14:34:55 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:35:37 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
@@ -79,7 +78,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 //     free(node2);
 //     free(node3);
 
-//     return 0;
+//     return (0);
 // }
 
 * MAIN SIMPLE *

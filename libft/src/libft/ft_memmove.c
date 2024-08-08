@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 11:42:33 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:36:15 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -72,7 +71,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 * el byte en la posicion n de dest, desde la posicion n de src, dando a
 * ambos el mismo valor. Asi vamos copiando desde el final.
 *
-* Si dest no es mayor que src, vamos copiando desde el inicio y avanzamos 
+* Si dest no es mayor que src, vamos copiando desde el inicio y avanzamos
 * una posicion en cada puntero en cada iteracion, para ir copiando
 * byte a byte hasta que n llegue a 0.
 */

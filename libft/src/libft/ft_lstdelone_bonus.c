@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 14:43:17 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:35:47 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
@@ -46,7 +45,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 //     // Se intentará acceder al contenido del nodo,
 //		lo que puede ser inseguro ya que el nodo ya no existe.
 //     // printf("Contenido del nodo: %d\n", *((int *)node->content));
-	// Esto sería un comportamiento indefinido
+// Esto sería un comportamiento indefinido
 
 //     return (0);
 // }

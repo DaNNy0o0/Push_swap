@@ -15,7 +15,6 @@
 
 #include "../../includes/libft.h"
 
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
@@ -52,7 +51,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 /*
 ! *************** FT_STRMAPI ***************
 
-* La funcion aplica una funcion f a cada caracter de un string, creando 
+* La funcion aplica una funcion f a cada caracter de un string, creando
 * una nueva cadena. Al acabar, retorna una cadena con el resultado final
 *
 

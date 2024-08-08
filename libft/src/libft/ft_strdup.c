@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/16 14:04:49 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:36:48 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 char	*ft_strdup(const char *s1)
 {
@@ -54,8 +53,8 @@ char	*ft_strdup(const char *s1)
 *
 * Asignamos a result la referencia a str, para guardar el puntero al inicio
 *
-* Mientras que el elemento al que apunta s1 en ese iteracion no sea nulo, 
-* vamos asignando/copiando los mismos caracteres en la misma posicion en 
+* Mientras que el elemento al que apunta s1 en ese iteracion no sea nulo,
+* vamos asignando/copiando los mismos caracteres en la misma posicion en
 * str. Cuando llega a la ultimo posicion, asignamos el nulo
 *
 * Retornamos un puntero a result (guarda la referencia al inicio de str)

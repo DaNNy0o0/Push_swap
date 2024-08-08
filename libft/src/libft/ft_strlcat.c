@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:05:28 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:36:57 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -52,7 +51,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 /*
 ! *************** FT_STRLCAT ***************
 
-* La funcion anexa un string origen, terminado en NULL, al final de 
+* La funcion anexa un string origen, terminado en NULL, al final de
 * un string destino
 *
 * Declaramos 3 variables:
@@ -74,13 +73,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 * bucle y obtenemos la longitud de dst, la cual guardamos en dest_len
 *
 * Si esa longitud es menor que el tamano que recibimos, asignamos a result_len
-* (la longitud final), la suma de la longitu de dest_len + la longitud de s 
+* (la longitud final), la suma de la longitu de dest_len + la longitud de s
 * (el string origen)
 *
-* Si no fuese menor, retornamos el tamano que recibimos + la longitud de s 
+* Si no fuese menor, retornamos el tamano que recibimos + la longitud de s
 * (el string origen)
 *
-* Mientras que el puntero a *s no sea NULO y que dest_len + 1 (para anadir el 
+* Mientras que el puntero a *s no sea NULO y que dest_len + 1 (para anadir el
 * nulo final) sea menor que el tamano que recibimos:
 *
 *	El puntero a la posicion de la suma de dst + dest_len tendra el mismo

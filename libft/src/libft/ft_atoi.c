@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:03:57 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:34:48 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 static int	check_special_chars_or_space(int c)
 {
@@ -104,8 +103,8 @@ int	ft_atoi(const char *nptr)
 * Declaramos 3 variables:
 
 !	- int final_num: Entero que va a contener el numero final
-	
-!	- int check: Entero que guarda el valor previo de final_num, para 
+
+!	- int check: Entero que guarda el valor previo de final_num, para
 !		comprobar situaciones de desborde
 
 !	- int sign: Entero que maneja el signo
@@ -113,41 +112,41 @@ int	ft_atoi(const char *nptr)
 * Asignamos el valor de 0 a final_num y de 1 a sign (1 es positivo)
 *
 * Iteramos sobre *str hasta el final:
-*	
+*
 *	- Comprobamos si el caracter al que apuntamos en cada iteracion NO es nulo
-*	y si es un caracter especial o un espacio (Mediante el uso de la fn 
+*	y si es un caracter especial o un espacio (Mediante el uso de la fn
 *	check_special_chars_or_space(int c))
 
-!	En caso de que sea positvo, pasamos a la siguiente posicion de la cadena	
+!	En caso de que sea positvo, pasamos a la siguiente posicion de la cadena
 
-*	- Si la posicion actual es un signo "-" o "+": 
+*	- Si la posicion actual es un signo "-" o "+":
 *
 *		- "-": Multiplicamos sign * -1, para manejar un numero negativo
 *		- "+": Pasamos a la siguiente posicion de la cadena
 *
 * Volvemos a iterar sobre *str hasta el final:
-*	
+*
 *	- Comprobamos si el caracter al que apuntamos en cada iteracion NO es nulo
-*	y si es un numero (Mediante el uso de la fn 
+*	y si es un numero (Mediante el uso de la fn
 *	check_digit(int c))
 
 	! En caso de que asi sea, entramos en el bucle
 
-*	- Asignamos a check el valor actual de final_num (0 en la 1a iteracion), 
+*	- Asignamos a check el valor actual de final_num (0 en la 1a iteracion),
 *	para mantener el valor anterior y evitar posibles desbordamientos
 *
-*	- Asignamos a final_num el valor entero del caracter al que estamos 
+*	- Asignamos a final_num el valor entero del caracter al que estamos
 *	apuntando actualmente, restando su valor decimal en la tabla ascii - 48
 *	(Posicion 0 en la tabla ASCII)
 
-!		- Si final_num es MAYOR que check Y el signo es menor que 0 (negativo), 
+!		- Si final_num es MAYOR que check Y el signo es menor que 0 (negativo),
 !		significa que estamos desbordando por debajo del mayor entero permitido
-!		(-2147483648). En tal caso, retornamos 0, indicando el 
+!		(-2147483648). En tal caso, retornamos 0, indicando el
 !		desbordamiento negativo.
 
-!		- Si final_num es MENOR que check Y el signo es mayor que 0 (positivo), 
+!		- Si final_num es MENOR que check Y el signo es mayor que 0 (positivo),
 !		significa que estamos desbordando por debajo del mayor entero permitido
-!		(2147483647). En tal caso, retornamos -1, indicando el 
+!		(2147483647). En tal caso, retornamos -1, indicando el
 !		desbordamiento positivo.
 *
 *	- Si no caemos en los anteriores casos, pasamos a la siguiente posicion de

@@ -6,12 +6,11 @@
 /*   By: ddiaz-to <ddiaz-to@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 14:16:21 by ddiaz-to          #+#    #+#             */
-/*   Updated: 2024/07/31 20:23:29 by ddiaz-to         ###   ########.fr       */
+/*   Updated: 2024/08/08 17:36:27 by ddiaz-to         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
-
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -59,8 +58,8 @@ void	ft_putnbr_fd(int n, int fd)
 * ft_putnbr_fd con los argumentos num / 10 y fd. Básicamente,se trata
 * de dividir el número por 10 e imprimir el cociente.
 *
-* A continuacion, imprime el resto de num dividido por 10 como un solo dígito. 
-* La expresión '0' + num % 10 convierte el dígito en su representación ASCII 
+* A continuacion, imprime el resto de num dividido por 10 como un solo dígito.
+* La expresión '0' + num % 10 convierte el dígito en su representación ASCII
 * (por ejemplo, 0 se convierte en '0', 1 se convierte en '1', etc.).
 *
 * Si num es menor o igual que 9, se imprime num como un caracter

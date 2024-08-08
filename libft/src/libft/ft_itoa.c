@@ -12,10 +12,9 @@
 
 #include "../../includes/libft.h"
 
-
 static int	count_digits(int n)
 {
-	int			i;
+	int	i;
 
 	i = 0;
 	while (n / 10)
@@ -95,8 +94,8 @@ char	*ft_itoa(int n)
 * Declaramos 4 variables:
 
 !	*final_str: Puntero que va a contener la referencia a la cadena final
-	
-!	int i: Entero que va a contener el numero de digitos que vamos a 
+
+!	int i: Entero que va a contener el numero de digitos que vamos a
 !	manejar
 
 !	- int sign: Entero que maneja el signo
@@ -108,14 +107,14 @@ char	*ft_itoa(int n)
 * Asignamos a sign el resultado de negative_numbers(num). Si num
 * es un numero negativo, asignamos a sign el valor de 1, sino 0.
 
-* Si sign es = 1, significa que estamos manejando un numero negativo, 
+* Si sign es = 1, significa que estamos manejando un numero negativo,
 * con lo que multiplicamos num * -1 para quitarle el signo.
 *
 * Asignamos a i el resultado de pasar a la fn de count_digits(num) +
 * sign (1 en caso de ser negativo, para dejar el hueco al signo)
 *
 * Asignamos el espacio en memoria a final_str con malloc, multiplicando
-* i (numero de digitos) * sizeof(char) (Tamano de cada int, 4) y le 
+* i (numero de digitos) * sizeof(char) (Tamano de cada int, 4) y le
 * sumamos 1 (para asignar el nulo final)
 
 * Retornamos 0 en caso de fallo de asignacion
@@ -131,13 +130,13 @@ char	*ft_itoa(int n)
 *	- Dividimos num / 10, para retirar ese ultimo int, y volvemos
 *	a iterar (mientras num sea >= 10)
 *
-* Una vez que salgamos del bucle, final_str[--i] se encuentra 
-* apuntando a la primera posicion (o penultima en el caso de 
-* ser negativo), con lo que asignamos el 
-* resultado de (num % 10) + '0' a la priemra posicion, 
-* para convertirlo en un dato de tipo char 
+* Una vez que salgamos del bucle, final_str[--i] se encuentra
+* apuntando a la primera posicion (o penultima en el caso de
+* ser negativo), con lo que asignamos el
+* resultado de (num % 10) + '0' a la priemra posicion,
+* para convertirlo en un dato de tipo char
 
-* Si el numero era negativo sign vale 1, con lo que asignamos a la 
+* Si el numero era negativo sign vale 1, con lo que asignamos a la
 * primera posicion (final_str[0]) el signo '-'
 
 * Retornamos final_str, el puntero al string final ya convertido
