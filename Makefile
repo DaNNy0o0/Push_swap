@@ -18,7 +18,7 @@ SRC_DIR				= src/
 OBJ_DIR				= obj/
 
 CC					= gcc
-CFLAGS				= -Wall -Werror -Wextra -I$(INC) -fsanitize=address -g
+CFLAGS				= -Wall -Werror -Wextra -I$(INC) #-fsanitize=address -g
 RM					= rm -f
 
 OPERATIONS_DIR		=	$(SRC_DIR)operations/push.c \
